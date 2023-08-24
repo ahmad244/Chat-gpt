@@ -1,14 +1,11 @@
+import React from "react";
+import "./MainContainer.css";
 
-
-
-function MainContainer(){
-
-
-    return <div>
-
-    </div>
+class MainContainer extends React.Component {
+    
+  render() {
+    return <div className="MainContainer">{this.props.children}</div>;
+  }
 }
-
-
 
 export default MainContainer;

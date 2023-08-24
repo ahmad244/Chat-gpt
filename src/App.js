@@ -1,22 +1,19 @@
-import logo from "./logo.svg";
 import "./App.css";
-import MainContainer from "./components/MainContainer";
 import ChatSecion from "./components/ChatSecion";
-import ChatList from "./components/ChatList";
-import ChatItem from "./components/ChatItem";
-import SideBar from "./components/SideBar";
-import HistorySection from "./components/HistorySection";
-import HistoryItem from "./components/HistoryItem";
-import ChatUserInputSec from "./components/ChatUserInputSec";
+import MainContainer from "./components/MainContainer";
 
 function App() {
   return (
     <div>
-      <button>Send</button>
-      <button>Send</button>
-      <button>Send</button>
-      <button>Send</button>
       <MainContainer>
+        <ChatSecion/>
+      </MainContainer>
+
+      {/* <button>Ahmad</button>
+      <button>Send</button>
+      <button>Send</button>
+      <button>Send</button> */}
+      {/* <MainContainer className="MainContainer">
         <ChatSecion>
           <ChatList>
             <ChatItem />
@@ -38,7 +35,7 @@ function App() {
             <HistoryItem />
           </HistorySection>
         </SideBar>
-      </MainContainer>
+      </MainContainer> */}
     </div>
   );
 }
