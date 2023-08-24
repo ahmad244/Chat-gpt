@@ -11,29 +11,35 @@ import ChatUserInputSec from "./components/ChatUserInputSec";
 
 function App() {
   return (
-    <MainContainer>
-      <ChatSecion>
-        <ChatList>
-          <ChatItem />
-          <ChatItem />
-          <ChatItem />
-        </ChatList>
-        <ChatUserInputSec>
-          <input>ChatTextParagraphField </input>
-          <input type="radio">ChooseGptVersionRadio</input>
-          <button>Send</button>
-        </ChatUserInputSec>
-      </ChatSecion>
-      <SideBar>
-      <button>StartNewchatBtn</button>
-        <HistorySection>
-          <HistoryItem />
-          <HistoryItem />
-          <HistoryItem />
-          <HistoryItem />
-        </HistorySection>
-      </SideBar>
-    </MainContainer>
+    <div>
+      <button>Send</button>
+      <button>Send</button>
+      <button>Send</button>
+      <button>Send</button>
+      <MainContainer>
+        <ChatSecion>
+          <ChatList>
+            <ChatItem />
+            <ChatItem />
+            <ChatItem />
+          </ChatList>
+          <ChatUserInputSec>
+            <input>ChatTextParagraphField </input>
+            <input type="radio">ChooseGptVersionRadio</input>
+            <button>Send</button>
+          </ChatUserInputSec>
+        </ChatSecion>
+        <SideBar>
+          <button>StartNewchatBtn</button>
+          <HistorySection>
+            <HistoryItem />
+            <HistoryItem />
+            <HistoryItem />
+            <HistoryItem />
+          </HistorySection>
+        </SideBar>
+      </MainContainer>
+    </div>
   );
 }
 
