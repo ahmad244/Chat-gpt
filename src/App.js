@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import MainContainer from "./components/MainContainer";
+import ChatSecion from "./components/ChatSecion";
+import ChatList from "./components/ChatList";
+import ChatItem from "./components/ChatItem";
+import SideBar from "./components/SideBar";
+import HistorySection from "./components/HistorySection";
+import HistoryItem from "./components/HistoryItem";
+import ChatUserInputSec from "./components/ChatUserInputSec";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         Hello World 123
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MainContainer>
+      <ChatSecion>
+        <ChatList>
+          <ChatItem />
+          <ChatItem />
+          <ChatItem />
+        </ChatList>
+        <ChatUserInputSec>
+          <input>ChatTextParagraphField </input>
+          <input type="radio">ChooseGptVersionRadio</input>
+          <button>Send</button>
+        </ChatUserInputSec>
+      </ChatSecion>
+      <SideBar>
+      <button>StartNewchatBtn</button>
+        <HistorySection>
+          <HistoryItem />
+          <HistoryItem />
+          <HistoryItem />
+          <HistoryItem />
+        </HistorySection>
+      </SideBar>
+    </MainContainer>
   );
 }
 
