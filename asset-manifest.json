@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "/Chat-gpt/static/css/main.073c9b0a.css",
-    "main.js": "/Chat-gpt/static/js/main.6d1b142c.js",
-    "static/media/logo.svg": "/Chat-gpt/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/Chat-gpt/static/css/main.4dd475a4.css",
+    "main.js": "/Chat-gpt/static/js/main.cbd2684a.js",
     "index.html": "/Chat-gpt/index.html",
-    "main.073c9b0a.css.map": "/Chat-gpt/static/css/main.073c9b0a.css.map",
-    "main.6d1b142c.js.map": "/Chat-gpt/static/js/main.6d1b142c.js.map"
+    "main.4dd475a4.css.map": "/Chat-gpt/static/css/main.4dd475a4.css.map",
+    "main.cbd2684a.js.map": "/Chat-gpt/static/js/main.cbd2684a.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.6d1b142c.js"
+    "static/css/main.4dd475a4.css",
+    "static/js/main.cbd2684a.js"
   ]
 }
