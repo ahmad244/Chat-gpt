@@ -1,13 +1,19 @@
 {
-  "files": {
-    "main.css": "/Chat-gpt/static/css/main.4dd475a4.css",
-    "main.js": "/Chat-gpt/static/js/main.15ac9b85.js",
-    "index.html": "/Chat-gpt/index.html",
-    "main.4dd475a4.css.map": "/Chat-gpt/static/css/main.4dd475a4.css.map",
-    "main.15ac9b85.js.map": "/Chat-gpt/static/js/main.15ac9b85.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.4dd475a4.css",
-    "static/js/main.15ac9b85.js"
-  ]
+  "main.css": "/Chat-gpt/static/css/main.aa0898f8.chunk.css",
+  "main.js": "/Chat-gpt/static/js/main.b1cca2bd.chunk.js",
+  "main.js.map": "/Chat-gpt/static/js/main.b1cca2bd.chunk.js.map",
+  "runtime~main.js": "/Chat-gpt/static/js/runtime~main.6c51faa1.js",
+  "runtime~main.js.map": "/Chat-gpt/static/js/runtime~main.6c51faa1.js.map",
+  "static/css/2.e69cd460.chunk.css": "/Chat-gpt/static/css/2.e69cd460.chunk.css",
+  "static/js/2.af14109e.chunk.js": "/Chat-gpt/static/js/2.af14109e.chunk.js",
+  "static/js/2.af14109e.chunk.js.map": "/Chat-gpt/static/js/2.af14109e.chunk.js.map",
+  "index.html": "/Chat-gpt/index.html",
+  "precache-manifest.889b0a05642299a1878260c3fc50df6a.js": "/Chat-gpt/precache-manifest.889b0a05642299a1878260c3fc50df6a.js",
+  "service-worker.js": "/Chat-gpt/service-worker.js",
+  "static/css/2.e69cd460.chunk.css.map": "/Chat-gpt/static/css/2.e69cd460.chunk.css.map",
+  "static/css/main.aa0898f8.chunk.css.map": "/Chat-gpt/static/css/main.aa0898f8.chunk.css.map",
+  "static/media/300.css": "/Chat-gpt/static/media/roboto-vietnamese-300-normal.48c684d9.woff2",
+  "static/media/400.css": "/Chat-gpt/static/media/roboto-vietnamese-400-normal.ca3b09b6.woff2",
+  "static/media/500.css": "/Chat-gpt/static/media/roboto-vietnamese-500-normal.8d5980bf.woff",
+  "static/media/700.css": "/Chat-gpt/static/media/roboto-vietnamese-700-normal.cdaab836.woff2"
 }
