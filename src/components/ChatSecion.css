@@ -1,5 +1,4 @@
 .ChatSecion{
-    background-color: whitesmoke;
     overflow: auto;
     grid-area: 1 /1 /1 /1;
 }

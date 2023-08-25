@@ -2,4 +2,8 @@
   grid-area: 1 / 2 / 3 / 2;
   justify-self: center;
   margin: 20px;
+  padding: 20px;
+  background-color: rgb(21, 82, 13);
+  overflow: auto;
+  width: 70%;
 }

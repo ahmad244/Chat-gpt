@@ -8,7 +8,7 @@ class ChatUserInputSec extends React.Component {
     return (
       <div className="ChatUserInputSec">
         <TextField
-          style={{ flexGrow: 5 }}
+          style={{ flexGrow: 5, backgroundColor:"dimgray" }}
           id="outlined-multiline-flexible"
           label="write to AI"
           multiline

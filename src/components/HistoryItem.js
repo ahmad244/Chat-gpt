@@ -9,6 +9,7 @@ class HistoryItem extends React.Component {
     return <div className="HistoryItem">
         
         <ViewHeadlineIcon />
+        {this.props.name}
 
         </div>;
   }

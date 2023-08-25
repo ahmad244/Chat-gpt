@@ -1,6 +1,11 @@
+ * {
+  color: white;
+}
 .MainContainer {
   display: grid;
   grid-template-columns: 8fr 2fr;
   grid-template-rows: 8fr 2fr;
-  height: 100vh;
+ height: 100vh;
+ background-color: slategrey;
+
 }
