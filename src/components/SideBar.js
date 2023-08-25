@@ -4,6 +4,7 @@ import { Button } from "@mui/material";
 import HistorySection from "./HistorySection";
 import HistoryItem from "./HistoryItem";
 
+
 class SideBar extends React.Component {
     
   render() {
