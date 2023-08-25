@@ -1,0 +1,5 @@
+.SideBar {
+  grid-area: 1 / 2 / 3 / 2;
+  justify-self: center;
+  margin: 20px;
+}

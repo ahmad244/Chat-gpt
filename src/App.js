@@ -3,13 +3,14 @@ import "./App.css";
 import ChatSecion from "./components/ChatSecion";
 import ChatUserInputSec from "./components/ChatUserInputSec";
 import MainContainer from "./components/MainContainer";
+import SideBar from "./components/SideBar";
 
 function App() {
   return (
     <div>
       <MainContainer>
-        <ChatSecion/>
-        <div/>
+        <ChatSecion />
+        <SideBar/>
         <ChatUserInputSec />
       </MainContainer>
 

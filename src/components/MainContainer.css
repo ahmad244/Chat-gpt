@@ -1,4 +1,6 @@
 .MainContainer {
   display: grid;
-  grid-template-columns:70% 30% ;
+  grid-template-columns: 8fr 2fr;
+  grid-template-rows: 8fr 2fr;
+  height: 100vh;
 }

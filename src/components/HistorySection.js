@@ -1,16 +1,13 @@
+import React from "react";
+import "./HistorySection.css";
 
-
-
-
-
-function HistorySection(){
-
-
-    return <div>
-
-    </div>
+class HistorySection extends React.Component {
+    
+  render() {
+    return <div className="HistorySection">
+         {this.props.children}
+        </div>;
+  }
 }
-
-
 
 export default HistorySection;
