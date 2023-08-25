@@ -8,7 +8,7 @@ class ChatItem extends React.Component {
         <div
           className="ChatItem"
           style={
-            (this.props.name != "Assistant") & (this.props.name != "System")
+            (this.props.name !== "Assistant") & (this.props.name !== "System")
               ? { flexDirection: "row-reverse" }
               : null
           }
@@ -30,12 +30,12 @@ class ChatItem extends React.Component {
 
           <div
             style={
-              (this.props.name != "Assistant") & (this.props.name != "System")
+              (this.props.name !== "Assistant") & (this.props.name !== "System")
                 ? { alignSelf: "flex-start", marginTop: "35px" }
                 : { marginTop: "35px" }
             }
           >
-            this is the comment
+            {this.props.comment}
           </div>
         </div>
       </>

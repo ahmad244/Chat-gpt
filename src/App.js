@@ -1,5 +1,7 @@
+import React from "react";
 import "./App.css";
 import ChatSecion from "./components/ChatSecion";
+import ChatUserInputSec from "./components/ChatUserInputSec";
 import MainContainer from "./components/MainContainer";
 
 function App() {
@@ -7,6 +9,8 @@ function App() {
     <div>
       <MainContainer>
         <ChatSecion/>
+        <div/>
+        <ChatUserInputSec />
       </MainContainer>
 
       {/* <button>Ahmad</button>

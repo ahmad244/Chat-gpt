@@ -7,8 +7,15 @@ class ChatSecion extends React.Component {
     return (
       <div className="ChatSecion">
 
-        <ChatItem name="Assistant" model="gpt-3.5-turbp" />
-        <ChatItem name="Ahmad" />
+<ChatItem name="Assistant" model="gpt-3.5-turbp" comment="this is a comment"/>
+        <ChatItem name="Ahmad" comment="this is a reply"/>
+        <ChatItem name="System" comment="Meh"/>
+        <ChatItem name="Assistant" model="gpt-3.5-turbp" comment="this is a comment"/>
+        <ChatItem name="Ahmad" comment="this is a reply"/>
+        <ChatItem name="System" comment="Meh"/>
+        <ChatItem name="Assistant" model="gpt-3.5-turbp" comment="this is a comment"/>
+        <ChatItem name="Ahmad" comment="this is a reply"/>
+        <ChatItem name="System" comment="Meh"/>
       
       </div>
     );
