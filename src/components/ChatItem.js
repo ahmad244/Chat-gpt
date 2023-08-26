@@ -5,12 +5,30 @@ import MonitorIcon from "@mui/icons-material/Monitor";
 import Person2Icon from "@mui/icons-material/Person2";
 
 class ChatItem extends React.Component {
+  chooseStyle(param) {
+    const style = {
+      flexDirection: "row-reverse",
+    };
+    switch (param) {
+      case "Assistant":
+        delete style.flexDirection;
+        return style;
+
+      case "System":
+        delete style.flexDirection;
+        return style;
+
+      default:
+        return style;
+    }
+  }
+
   chooseIcon(param) {
     const style = {
       borderRadius: "100%",
       backgroundColor: "transparent",
       borderColor: "#2f3e46",
-      width: "40px", 
+      width: "40px",
       borderWidth: "thick",
       borderStyle: "solid",
       height: "40px",
@@ -46,14 +64,7 @@ class ChatItem extends React.Component {
   render() {
     return (
       <>
-        <div
-          className="ChatItem"
-          style={
-            (this.props.name !== "Assistant") & (this.props.name !== "System")
-              ? { flexDirection: "row-reverse" }
-              : null
-          }
-        >
+        <div className="ChatItem" style={this.chooseStyle(this.props.name)}>
           {this.chooseIcon(this.props.name)}
 
           <div>

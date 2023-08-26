@@ -35,11 +35,15 @@
 /* Track */
 ::-webkit-scrollbar-track {
   background: #cad2c5;
+  border-radius: 25px;
+
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #2f3e46;
+  border-radius: 25px;
+
 }
 
 /* Handle on hover */

@@ -4,5 +4,6 @@
   gap: 10px;
   margin: 20px;
   justify-content: space-around;
+  border-radius: 20px;
   grid-area: 2 / 1 / 2/ 1;
 }
