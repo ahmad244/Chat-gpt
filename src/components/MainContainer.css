@@ -6,6 +6,19 @@
   background-color: #447066;
 }
 
+
+@media (max-width: 1200px) {
+  .MainContainer {
+  grid-template-columns: 8fr 3fr;
+  }
+}
+@media (max-width: 1000px) {
+  .MainContainer {
+  grid-template-columns: 6fr 3fr;
+  }
+}
+
+
 @media (max-width: 600px) {
   .MainContainer {
     grid-template-columns: 1fr; /* Change to a single column layout */
