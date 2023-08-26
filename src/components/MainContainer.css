@@ -1,11 +1,35 @@
- * {
-  color: white;
-}
 .MainContainer {
   display: grid;
   grid-template-columns: 8fr 2fr;
   grid-template-rows: 8fr 2fr;
- height: 100vh;
- background-color: slategrey;
+  height: 100vh;
+  background-color: #447066;
+}
 
+@media (max-width: 600px) {
+  .MainContainer {
+    grid-template-columns: 1fr; /* Change to a single column layout */
+    grid-template-rows: auto; /* Let rows adjust based on content */
+  }
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 25px; 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #cad2c5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2f3e46;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

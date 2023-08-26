@@ -8,7 +8,7 @@ class SideBar extends React.Component {
   render() {
     return (
       <div className="SideBar">
-        <Button color="salmon" variant="outlined">
+        <Button style={{margin:"20px", backgroundColor:"#2f3e46"}} variant="contained">
           Start New Chat
         </Button>
 

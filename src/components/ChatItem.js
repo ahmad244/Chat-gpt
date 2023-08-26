@@ -9,7 +9,7 @@ class ChatItem extends React.Component {
     const style = {
       borderRadius: "100%",
       backgroundColor: "transparent",
-      borderColor: "peachpuff",
+      borderColor: "#2f3e46",
       width: "40px", 
       borderWidth: "thick",
       borderStyle: "solid",
@@ -28,7 +28,7 @@ class ChatItem extends React.Component {
         );
 
       case "System":
-        style["borderColor"] = "blue";
+        style["borderColor"] = "#354f52";
         return (
           <div style={style}>
             <MonitorIcon />
