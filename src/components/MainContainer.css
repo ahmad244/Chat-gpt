@@ -1,6 +1,6 @@
 .MainContainer {
   display: grid;
-  grid-template-columns: 8fr 2fr;
+  grid-template-columns: 2fr 8fr ;
   grid-template-rows: 8fr 2fr;
   height: 100vh;
   background-color: #447066;
@@ -9,20 +9,21 @@
 
 @media (max-width: 1200px) {
   .MainContainer {
-  grid-template-columns: 8fr 3fr;
+  grid-template-columns: 3fr 8fr ;
   }
 }
 @media (max-width: 1000px) {
   .MainContainer {
-  grid-template-columns: 6fr 3fr;
+  grid-template-columns: 3fr 6fr;
   }
 }
 
 
 @media (max-width: 600px) {
   .MainContainer {
+    height: 120vh;
     grid-template-columns: 1fr; /* Change to a single column layout */
-    grid-template-rows: 500px 200px 0px 400px; /* Let rows adjust based on content */
+    grid-template-rows: 60vh 20vh 0vh 40vh; /* Let rows adjust based on content */
   }
 }
 

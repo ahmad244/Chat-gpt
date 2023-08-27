@@ -5,7 +5,22 @@ import axios from "axios";
 import "./ChatUserInputSec.css";
 
 class ChatUserInputSec extends React.Component {
+  state = {
+    inputText: "", // Initialize the input text in state
+  };
+
+  handleInputChange = (event) => {
+    this.setState({
+      inputText: event.target.value,
+    });
+  };
   handleClick = () => {
+    this.props.addChatItem({
+      content: this.state.inputText,
+      name: "Ahmad",
+      role: "user"
+    });
+
     // Set the headers for the API key
     const config = {
       headers: {
@@ -18,14 +33,21 @@ class ChatUserInputSec extends React.Component {
     axios
       .post(
         "https://hjpt.appian.community/suite/webapi/call-gpt",
-        { dummyQueryParam: 123 },
+        {
+          model: "gpt-3.5-turbo",
+          messages: this.props.chatItems,
+          loggedInUser: "Ahmad",
+        },
         config
       )
       .then((response) => {
         // Handle the response from the API
         const alteredResponse = response.data.choices[0].message;
-        alteredResponse["name"] = "React user name";
+        alteredResponse["name"] = "Assistant";
+        alteredResponse["role"] = "assistant";
         console.log(alteredResponse);
+        this.props.addChatItem(alteredResponse);
+        // this.handleInputChange("");
       })
       .catch((error) => {
         // Handle any errors that occurred during the API call
@@ -37,12 +59,15 @@ class ChatUserInputSec extends React.Component {
     return (
       <div className="ChatUserInputSec">
         <TextField
+          required
           style={{ flexGrow: 5 }}
           id="outlined-multiline-flexible"
           label="write to AI"
           multiline
           InputProps={{ sx: { borderRadius: 3, backgroundColor: "#cad2c5" } }}
           rows={4}
+          value={this.state.inputText}
+          onChange={this.handleInputChange}
         />
 
         <Button
