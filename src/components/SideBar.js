@@ -4,11 +4,14 @@ import { Button } from "@mui/material";
 import HistorySection from "./HistorySection";
 import HistoryItem from "./HistoryItem";
 
-class SideBar extends React.Component { 
+class SideBar extends React.Component {
   render() {
     return (
       <div className="SideBar">
-        <Button style={{margin:"20px", backgroundColor:"#2f3e46"}} variant="contained">
+        <Button
+          style={{ margin: "20px", backgroundColor: "#2f3e46" }}
+          variant="contained"
+        >
           Start New Chat
         </Button>
 

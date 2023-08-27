@@ -36,6 +36,8 @@ class App extends React.Component {
       chatItems: [...prevState.chatItems, newChatItem],
     }));
   };
+
+
   render() {
     return (
       <div>

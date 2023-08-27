@@ -1,50 +1,27 @@
 .MainContainer {
   display: grid;
-  grid-template-columns: 2fr 8fr ;
+  grid-template-columns: 1fr;
   grid-template-rows: 8fr 2fr;
   height: 100vh;
   background-color: #447066;
+  transition: margin-left 0.5s;
 }
-
-
-@media (max-width: 1200px) {
-  .MainContainer {
-  grid-template-columns: 3fr 8fr ;
-  }
-}
-@media (max-width: 1000px) {
-  .MainContainer {
-  grid-template-columns: 3fr 6fr;
-  }
-}
-
-
-@media (max-width: 600px) {
-  .MainContainer {
-    height: 120vh;
-    grid-template-columns: 1fr; /* Change to a single column layout */
-    grid-template-rows: 60vh 20vh 0vh 40vh; /* Let rows adjust based on content */
-  }
-}
-
 
 ::-webkit-scrollbar {
   width: 10px;
-  border-radius: 25px; 
+  border-radius: 25px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   background: #cad2c5;
   border-radius: 25px;
-
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #2f3e46;
   border-radius: 25px;
-
 }
 
 /* Handle on hover */
