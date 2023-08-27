@@ -22,7 +22,7 @@
 @media (max-width: 600px) {
   .MainContainer {
     grid-template-columns: 1fr; /* Change to a single column layout */
-    grid-template-rows: auto; /* Let rows adjust based on content */
+    grid-template-rows: 500px 200px 0px 400px; /* Let rows adjust based on content */
   }
 }
 

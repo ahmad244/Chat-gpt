@@ -1,24 +1,25 @@
-import React from "react";
+import React, { Component } from "react";
 import "./App.css";
 import ChatSecion from "./components/ChatSecion";
 import ChatUserInputSec from "./components/ChatUserInputSec";
 import MainContainer from "./components/MainContainer";
 import SideBar from "./components/SideBar";
 
-function App() {
-  return (
-    <div>
-      <MainContainer>
-        <ChatSecion />
-        <SideBar/>
-        <ChatUserInputSec />
-      </MainContainer>
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <MainContainer>
+          <ChatSecion />
+          <SideBar />
+          <ChatUserInputSec />
+        </MainContainer>
 
-      {/* <button>Ahmad</button>
+        {/* <button>Ahmad</button>
       <button>Send</button>
       <button>Send</button>
-      <button>Send</button> */}
-      {/* <MainContainer className="MainContainer">
+      <button>Send</button> */
+        /* <MainContainer className="MainContainer">
         <ChatSecion>
           <ChatList>
             <ChatItem />
@@ -41,8 +42,9 @@ function App() {
           </HistorySection>
         </SideBar>
       </MainContainer> */}
-    </div>
-  );
+      </div>
+    );
+  }
 }
 
 export default App;
