@@ -35,6 +35,7 @@ class ChatItem extends React.Component {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
+      flexShrink:0
     };
     switch (param) {
       case "assistant":
@@ -75,7 +76,8 @@ class ChatItem extends React.Component {
 
           <div
             style={
-              (this.props.obj.role !== "assistant") & (this.props.obj.role !== "system")
+              (this.props.obj.role !== "assistant") &
+              (this.props.obj.role !== "system")
                 ? { alignSelf: "flex-start", marginTop: "35px" }
                 : { marginTop: "35px" }
             }
