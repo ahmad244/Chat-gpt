@@ -5,9 +5,22 @@ import axios from "axios";
 import "./ChatUserInputSec.css";
 
 class ChatUserInputSec extends React.Component {
-  state = {
-    inputText: "", // Initialize the input text in state
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      inputText: "",
+    };
+
+    // Bind the pressEnter function to the correct value of "this"
+    this.pressEnter = this.pressEnter.bind(this);
+  }
+
+  pressEnter(e) {
+    if (e.keyCode === 13 && !e.shiftKey) {
+      this.handleClick();
+      // put the login here
+    }
+  }
 
   handleInputChange = (event) => {
     this.setState({
@@ -18,7 +31,7 @@ class ChatUserInputSec extends React.Component {
     this.props.addChatItem({
       content: this.state.inputText,
       name: "Ahmad",
-      role: "user"
+      role: "user",
     });
 
     // Set the headers for the API key
@@ -28,6 +41,10 @@ class ChatUserInputSec extends React.Component {
           "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NTY0NTU4Mi1kYzJlLTRkNmYtYWQ3YS02NGJiNTc1ZTBkYWQifQ.qvBFLvd3S9LQivUGaKo1agqb1X5ZTBHPyVFI8VqBgmU", // Replace "your-api-key" with your actual API key
       },
     };
+
+    this.setState({
+      inputText: "",
+    });
 
     // Make API call using axios with the headers
     axios
@@ -53,6 +70,8 @@ class ChatUserInputSec extends React.Component {
         // Handle any errors that occurred during the API call
         console.error(error);
       });
+
+    //empty feild
   };
 
   render() {
@@ -68,15 +87,24 @@ class ChatUserInputSec extends React.Component {
           rows={4}
           value={this.state.inputText}
           onChange={this.handleInputChange}
+          onKeyUp={this.pressEnter}
         />
-
-        <Button
-          onClick={this.handleClick} // Call the handleClick function when the button is clicked
-          style={{ backgroundColor: "#2f3e46" }}
-          variant="contained"
-        >
-          Send
-        </Button>
+        <div style={{display:"flex",flexDirection:"column",gap:"10px"}}>
+          <Button
+            onClick={this.handleClick} // Call the handleClick function when the button is clicked
+            style={{ backgroundColor: "#2f3e46" }}
+            variant="contained"
+          >
+            Send
+          </Button>
+          <Button
+            onClick={this.props.resetChatItems} // Call the handleClick function when the button is clicked
+            variant="contained"
+            color="error"
+          >
+            reset
+          </Button>
+        </div>
       </div>
     );
   }

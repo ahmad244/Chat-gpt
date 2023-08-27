@@ -1,30 +1,35 @@
-import React  from "react";
+import React from "react";
 import "./App.css";
 import ChatSecion from "./components/ChatSecion";
 import ChatUserInputSec from "./components/ChatUserInputSec";
 import MainContainer from "./components/MainContainer";
 import SideBar from "./components/SideBar";
-
-class App extends React.Component  {
+const unEditedchatItems = [
+  {
+    name: "System",
+    content: "you're a good assisstant, now do your magic!",
+    role: "system",
+  },
+  {
+    name: "Assistant",
+    content:
+      "Thank you for your kind words! I'm here to help you with whatever you need. Just let me know what you'd like assistance with or what information you're looking for, and I'll do my best to assist you.",
+    role: "assistant",
+  },
+];
+class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      chatItems: [
-        {
-          name: "System",
-          content: "you're a good assisstant, now do your magic!",
-          role: "system",
-        },
-        {
-          name: "Assistant",
-          content:
-            "Thank you for your kind words! I'm here to help you with whatever you need. Just let me know what you'd like assistance with or what information you're looking for, and I'll do my best to assist you.",
-          role: "assistant",
-        },
-      ],
+      chatItems: unEditedchatItems,
     };
+    this.resetChatItems = this.resetChatItems.bind(this);
   }
-
+  resetChatItems() {
+    this.setState({
+      chatItems: unEditedchatItems,
+    });
+  }
   // Function to add a new chat item
   addChatItem = (newChatItem) => {
     this.setState((prevState) => ({
@@ -40,6 +45,7 @@ class App extends React.Component  {
           <ChatUserInputSec
             chatItems={this.state.chatItems}
             addChatItem={this.addChatItem}
+            resetChatItems={this.resetChatItems}
           />
         </MainContainer>
 

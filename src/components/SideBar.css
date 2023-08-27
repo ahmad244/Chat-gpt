@@ -1,7 +1,7 @@
 .SideBar {
   grid-row: span 2;
   justify-self: center;
-  margin: 20px;
+
   padding: 20px;
   background-color: #354f52;
   width: 70%;

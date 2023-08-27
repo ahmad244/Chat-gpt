@@ -12,6 +12,7 @@ class ChatItem extends React.Component {
     switch (param) {
       case "assistant":
         delete style.flexDirection;
+        style["backgroundColor"] = "#5f9b8c"
         return style;
 
       case "system":
@@ -19,6 +20,7 @@ class ChatItem extends React.Component {
         return style;
 
       default:
+        style["backgroundColor"] = "#428776"        
         return style;
     }
   }
