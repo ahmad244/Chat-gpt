@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React  from "react";
 import "./App.css";
 import ChatSecion from "./components/ChatSecion";
 import ChatUserInputSec from "./components/ChatUserInputSec";
 import MainContainer from "./components/MainContainer";
 import SideBar from "./components/SideBar";
 
-class App extends Component {
+class App extends React.Component  {
   constructor(props) {
     super(props);
     this.state = {
