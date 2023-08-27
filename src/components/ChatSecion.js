@@ -1,7 +1,7 @@
 import React from "react";
 import "./ChatSecion.css";
 import ChatItem from "./ChatItem";
-import { Button, IconButton } from "@mui/material";
+import { IconButton } from "@mui/material";
 import ViewHeadlineIcon from "@mui/icons-material/ViewHeadline";
 
 class ChatSecion extends React.Component {
