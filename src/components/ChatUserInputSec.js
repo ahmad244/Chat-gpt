@@ -85,16 +85,23 @@ class ChatUserInputSec extends React.Component {
           id="outlined-multiline-flexible"
           label="write to AI"
           multiline
-          InputProps={{ sx: { borderRadius: 3, backgroundColor: "#cad2c5" } }}
+          InputProps={{ sx: { borderRadius: 3, boxShadow: "1px 1px #888888" } }}
           rows={4}
           value={this.state.inputText}
           onChange={this.handleInputChange}
           onKeyUp={this.pressEnter}
         />
-        <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row-reverse",
+            gap: "10px",
+            justifyContent: "space-between",
+          }}
+        >
           <Button
             onClick={this.handleClick} // Call the handleClick function when the button is clicked
-            style={{ backgroundColor: "#2f3e46" }}
+            style={{ backgroundColor: "#2f3e46", width: "10%" }}
             variant="contained"
           >
             Send
@@ -102,6 +109,7 @@ class ChatUserInputSec extends React.Component {
           <Button
             onClick={this.props.resetChatItems} // Call the handleClick function when the button is clicked
             variant="contained"
+            style={{ width: "10%" }}
             color="error"
           >
             reset

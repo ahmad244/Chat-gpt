@@ -2,11 +2,13 @@
   overflow: hidden;
   grid-column: span 1;
   grid-row: span 1;
-  background-color: #6e968c;
-  border-radius: 0 0 25px 25px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
   min-width: 350px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
+  padding: 8px 0 px 0;
+  box-shadow: 1px 1px #888888;
 
+}
