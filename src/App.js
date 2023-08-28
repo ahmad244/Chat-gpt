@@ -16,28 +16,6 @@ const unEditedchatItems = [
       "Thank you for your kind words! I'm here to help you with whatever you need. Just let me know what you'd like assistance with or what information you're looking for, and I'll do my best to assist you.",
     role: "assistant",
   },
-  {
-    name: "System",
-    content: "you're a good assisstant, now do your magic!",
-    role: "system",
-  },
-  {
-    name: "Assistant",
-    content:
-      "Thank you for your kind words! I'm here to help you with whatever you need. Just let me know what you'd like assistance with or what information you're looking for, and I'll do my best to assist you.",
-    role: "assistant",
-  },
-  {
-    name: "System",
-    content: "you're a good assisstant, now do your magic!",
-    role: "system",
-  },
-  {
-    name: "Assistant",
-    content:
-      "Thank you for your kind words! I'm here to help you with whatever you need. Just let me know what you'd like assistance with or what information you're looking for, and I'll do my best to assist you.",
-    role: "assistant",
-  },
 ];
 class App extends React.Component {
   constructor(props) {

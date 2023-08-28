@@ -28,10 +28,16 @@ class ChatUserInputSec extends React.Component {
     });
   };
   handleClick = () => {
-    this.props.addChatItem({
+    const newChatItem = {
       content: this.state.inputText,
       name: "Ahmad",
       role: "user",
+    };
+
+    this.props.addChatItem(newChatItem);
+
+    this.setState({
+      inputText: "",
     });
 
     // Set the headers for the API key
@@ -42,17 +48,13 @@ class ChatUserInputSec extends React.Component {
       },
     };
 
-    this.setState({
-      inputText: "",
-    });
-
     // Make API call using axios with the headers
     axios
       .post(
         "https://hjpt.appian.community/suite/webapi/call-gpt",
         {
           model: "gpt-3.5-turbo",
-          messages: this.props.chatItems,
+          messages: [...this.props.chatItems, newChatItem], // Include the new chat item
           loggedInUser: "Ahmad",
         },
         config
@@ -89,7 +91,7 @@ class ChatUserInputSec extends React.Component {
           onChange={this.handleInputChange}
           onKeyUp={this.pressEnter}
         />
-        <div style={{display:"flex",flexDirection:"column",gap:"10px"}}>
+        <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
           <Button
             onClick={this.handleClick} // Call the handleClick function when the button is clicked
             style={{ backgroundColor: "#2f3e46" }}
