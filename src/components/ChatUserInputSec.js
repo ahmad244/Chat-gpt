@@ -85,7 +85,7 @@ class ChatUserInputSec extends React.Component {
           id="outlined-multiline-flexible"
           label="write to AI"
           multiline
-          InputProps={{ sx: { borderRadius: 3, boxShadow: "1px 1px #888888" } }}
+          InputProps={{ sx: { borderRadius: 3, boxShadow: "2px 3px 0px 1px #888888" } }}
           rows={4}
           value={this.state.inputText}
           onChange={this.handleInputChange}
