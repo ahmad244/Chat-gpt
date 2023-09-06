@@ -51,7 +51,7 @@ class ChatUserInputSec extends React.Component {
     // Make API call using axios with the headers
     axios
       .post(
-        "https://hjpt.appian.community/suite/webapi/call-gpt",
+        "https://node-web-server-tsly.onrender.com/chat-gpt",
         {
           model: "gpt-3.5-turbo",
           messages: [...this.props.chatItems, newChatItem], // Include the new chat item
