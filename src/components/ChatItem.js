@@ -5,6 +5,8 @@ import MonitorIcon from "@mui/icons-material/Monitor";
 import Person2Icon from "@mui/icons-material/Person2";
 
 class ChatItem extends React.Component {
+  
+
   chooseStyle(param) {
     const style = {
       flexDirection: "row-reverse",
@@ -12,7 +14,7 @@ class ChatItem extends React.Component {
     switch (param) {
       case "assistant":
         delete style.flexDirection;
-        style["backgroundColor"] = "#ebebeb"
+        style["backgroundColor"] = "#ebebeb";
         return style;
 
       case "system":
@@ -20,7 +22,7 @@ class ChatItem extends React.Component {
         return style;
 
       default:
-        style["backgroundColor"] = "#f4f4f4"        
+        style["backgroundColor"] = "#f4f4f4";
         return style;
     }
   }
@@ -37,7 +39,7 @@ class ChatItem extends React.Component {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      flexShrink:0
+      flexShrink: 0,
     };
     switch (param) {
       case "assistant":
@@ -76,8 +78,6 @@ class ChatItem extends React.Component {
             <div style={{ fontSize: "8pt" }}>{this.props.obj.datetime}</div>
           </div>
 
-
-          
           <div
             style={
               (this.props.obj.role !== "assistant") &

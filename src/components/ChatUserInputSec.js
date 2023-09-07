@@ -33,6 +33,7 @@ class ChatUserInputSec extends React.Component {
       name: "Ahmad",
       role: "user",
     };
+    window.scrollTo(0, document.body.scrollHeight);
 
     this.props.addChatItem(newChatItem);
 
@@ -42,16 +43,17 @@ class ChatUserInputSec extends React.Component {
 
     // Set the headers for the API key
     const config = {
-      headers: {
-        "Appian-API-Key":
-          "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NTY0NTU4Mi1kYzJlLTRkNmYtYWQ3YS02NGJiNTc1ZTBkYWQifQ.qvBFLvd3S9LQivUGaKo1agqb1X5ZTBHPyVFI8VqBgmU", // Replace "your-api-key" with your actual API key
-      },
+      // headers: {
+      //   "Appian-API-Key":
+      //     "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NTY0NTU4Mi1kYzJlLTRkNmYtYWQ3YS02NGJiNTc1ZTBkYWQifQ.qvBFLvd3S9LQivUGaKo1agqb1X5ZTBHPyVFI8VqBgmU", // Replace "your-api-key" with your actual API key
+      // },
     };
+    const apiUrl = process.env.REACT_APP_API_BASE_URL;
 
     // Make API call using axios with the headers
     axios
       .post(
-        "https://node-web-server-tsly.onrender.com/chat-gpt",
+        apiUrl+ "/chat-gpt",
         {
           model: "gpt-3.5-turbo",
           messages: [...this.props.chatItems, newChatItem], // Include the new chat item

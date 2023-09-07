@@ -1,6 +1,5 @@
 import React from "react";
 import "./ChatSecion.css";
-import ChatItem from "./ChatItem";
 import { IconButton } from "@mui/material";
 import ViewHeadlineIcon from "@mui/icons-material/ViewHeadline";
 import ChatList from "./ChatList";
@@ -48,11 +47,7 @@ class ChatSecion extends React.Component {
         >
           <ViewHeadlineIcon />
         </IconButton>
-        <ChatList>
-          {chatItems.map((item, index) => (
-            <ChatItem key={index} obj={item} />
-          ))}
-        </ChatList>
+        <ChatList chatItems={chatItems} />
       </div>
     );
   }
