@@ -4,5 +4,5 @@ npm update --legacy-peer-deps
 
 npm install -g npm-check-updates
 ncu -u
-//then finally
+#then finally
 npm install
