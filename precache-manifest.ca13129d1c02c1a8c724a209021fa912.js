@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "01cf9e872783f7972819",
+    "revision": "4b08099a079080abcd82",
     "url": "/Chat-gpt/static/css/main.2829676c.chunk.css"
   },
   {
-    "revision": "01cf9e872783f7972819",
-    "url": "/Chat-gpt/static/js/main.13ea91ad.chunk.js"
+    "revision": "4b08099a079080abcd82",
+    "url": "/Chat-gpt/static/js/main.a4b311ff.chunk.js"
   },
   {
     "revision": "424ce42a977924ec3a0b",
@@ -40,6 +40,18 @@ self.__precacheManifest = [
     "url": "/Chat-gpt/static/media/roboto-greek-ext-300-normal.c2be5367.woff2"
   },
   {
+    "revision": "5392caae55fccc1421e6d0356c65982e",
+    "url": "/Chat-gpt/static/media/roboto-greek-ext-300-normal.5392caae.woff"
+  },
+  {
+    "revision": "dcdaee374d5bbeab0a5ed5c8cf39a6cd",
+    "url": "/Chat-gpt/static/media/roboto-greek-300-normal.dcdaee37.woff2"
+  },
+  {
+    "revision": "43c3a71d250ad8c4106dae1c44c05a2a",
+    "url": "/Chat-gpt/static/media/roboto-greek-300-normal.43c3a71d.woff"
+  },
+  {
     "revision": "48c684d99330969e3ce90b9e9da2d698",
     "url": "/Chat-gpt/static/media/roboto-vietnamese-300-normal.48c684d9.woff2"
   },
@@ -62,18 +74,6 @@ self.__precacheManifest = [
   {
     "revision": "b19cb2c7238e93631490a2a0cf0c0ec1",
     "url": "/Chat-gpt/static/media/roboto-latin-300-normal.b19cb2c7.woff"
-  },
-  {
-    "revision": "5392caae55fccc1421e6d0356c65982e",
-    "url": "/Chat-gpt/static/media/roboto-greek-ext-300-normal.5392caae.woff"
-  },
-  {
-    "revision": "43c3a71d250ad8c4106dae1c44c05a2a",
-    "url": "/Chat-gpt/static/media/roboto-greek-300-normal.43c3a71d.woff"
-  },
-  {
-    "revision": "dcdaee374d5bbeab0a5ed5c8cf39a6cd",
-    "url": "/Chat-gpt/static/media/roboto-greek-300-normal.dcdaee37.woff2"
   },
   {
     "revision": "c00467dc3792a8ab586955a3faefcac9",
@@ -148,20 +148,12 @@ self.__precacheManifest = [
     "url": "/Chat-gpt/static/media/roboto-cyrillic-500-normal.0a902cf6.woff"
   },
   {
-    "revision": "e7b7001dff6c14165abdc0fefdecae06",
-    "url": "/Chat-gpt/static/media/roboto-greek-ext-500-normal.e7b7001d.woff2"
-  },
-  {
-    "revision": "dee4262c32d7ad4ab01774b677c792a0",
-    "url": "/Chat-gpt/static/media/roboto-greek-ext-500-normal.dee4262c.woff"
+    "revision": "a53c48242ba584f34292738b021e2ac6",
+    "url": "/Chat-gpt/static/media/roboto-greek-500-normal.a53c4824.woff"
   },
   {
     "revision": "53f395eb854a40e978706b1082570e42",
     "url": "/Chat-gpt/static/media/roboto-greek-500-normal.53f395eb.woff2"
-  },
-  {
-    "revision": "a53c48242ba584f34292738b021e2ac6",
-    "url": "/Chat-gpt/static/media/roboto-greek-500-normal.a53c4824.woff"
   },
   {
     "revision": "7cda2cfee99d697daf8c14819d9004eb",
@@ -186,6 +178,14 @@ self.__precacheManifest = [
   {
     "revision": "ad4c3ac03977ab2f8f577be1d51e7e40",
     "url": "/Chat-gpt/static/media/roboto-latin-500-normal.ad4c3ac0.woff"
+  },
+  {
+    "revision": "dee4262c32d7ad4ab01774b677c792a0",
+    "url": "/Chat-gpt/static/media/roboto-greek-ext-500-normal.dee4262c.woff"
+  },
+  {
+    "revision": "e7b7001dff6c14165abdc0fefdecae06",
+    "url": "/Chat-gpt/static/media/roboto-greek-ext-500-normal.e7b7001d.woff2"
   },
   {
     "revision": "e0bc9313fdde7851c88c901baf3c2b5c",
@@ -244,7 +244,7 @@ self.__precacheManifest = [
     "url": "/Chat-gpt/static/media/roboto-latin-700-normal.091ab374.woff"
   },
   {
-    "revision": "d27bd792397eb221a5488a46cadacd15",
+    "revision": "80c9950ffeedb140ac7cb9180acd4c32",
     "url": "/Chat-gpt/index.html"
   }
 ];
