@@ -1,10 +1,10 @@
-import React from "react";
+import React, {PureComponent} from 'react'
 import "./SideBar.css";
 import { Button } from "@mui/material";
 import HistorySection from "./HistorySection";
 import HistoryItem from "./HistoryItem";
 
-class SideBar extends React.Component {
+class SideBar extends PureComponent {
   render() {
     return (
       <div className="SideBar">

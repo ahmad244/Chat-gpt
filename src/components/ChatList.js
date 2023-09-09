@@ -1,8 +1,8 @@
-import React from "react";
+import React, {PureComponent} from 'react'
 import "./ChatList.css";
 import ChatItem from "./ChatItem";
 
-class ChatList extends React.Component {
+class ChatList extends PureComponent {
   constructor(props) {
     super(props);
     // Create a ref for the ChatList element

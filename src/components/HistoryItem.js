@@ -1,8 +1,8 @@
-import React from "react";
+import React, {PureComponent} from 'react'
 import "./HistoryItem.css";
 import ViewHeadlineIcon from "@mui/icons-material/ViewHeadline";
 
-class HistoryItem extends React.Component {
+class HistoryItem extends PureComponent {
   render() {
     return (
       <div className="HistoryItem">

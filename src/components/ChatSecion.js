@@ -1,10 +1,10 @@
-import React from "react";
+import React, {PureComponent} from 'react'
 import "./ChatSecion.css";
 import { IconButton } from "@mui/material";
 import ViewHeadlineIcon from "@mui/icons-material/ViewHeadline";
 import ChatList from "./ChatList";
 
-class ChatSecion extends React.Component {
+class ChatSecion extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {

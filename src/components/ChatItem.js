@@ -1,10 +1,10 @@
-import React from "react";
+import React, {PureComponent} from 'react'
 import "./ChatItem.css";
 import SmartToyIcon from "@mui/icons-material/SmartToy";
 import MonitorIcon from "@mui/icons-material/Monitor";
 import Person2Icon from "@mui/icons-material/Person2";
 
-class ChatItem extends React.Component {
+class ChatItem extends PureComponent {
   
 
   chooseStyle(param) {

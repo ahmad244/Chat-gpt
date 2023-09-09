@@ -1,7 +1,7 @@
-import React from "react";
+import React, {PureComponent} from 'react'
 import "./HistorySection.css";
 
-class HistorySection extends React.Component {
+class HistorySection extends PureComponent {
     
   render() {
     return <div className="HistorySection">

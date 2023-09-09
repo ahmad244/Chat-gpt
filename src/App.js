@@ -1,4 +1,4 @@
-import React from "react";
+import React, {PureComponent} from 'react'
 import "./App.css";
 import ChatSecion from "./components/ChatSecion";
 import ChatUserInputSec from "./components/ChatUserInputSec";
@@ -17,7 +17,7 @@ const unEditedchatItems = [
     role: "assistant",
   },
 ];
-class App extends React.Component {
+class App extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {

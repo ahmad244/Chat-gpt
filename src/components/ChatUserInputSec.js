@@ -1,10 +1,10 @@
-import * as React from "react";
+import React, {PureComponent} from 'react'
 import Button from "@mui/material/Button";
 import { TextField } from "@mui/material";
 import axios from "axios";
 import "./ChatUserInputSec.css";
 
-class ChatUserInputSec extends React.Component {
+class ChatUserInputSec extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
