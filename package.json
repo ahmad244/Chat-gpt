@@ -4,23 +4,23 @@
   "private": true,
   "homepage": "https://ahmad244.github.io/Chat-gpt",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^14.4.3",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "^5.0.1",
-    "web-vitals": "^3.1.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@fontsource/roboto": "^5.0.8",
     "@mui/icons-material": "^5.14.6",
     "@mui/material": "^5.14.6",
     "@mui/styled-engine-sc": "^5.14.6",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
     "axios": "^1.5.0",
     "dotenv": "^16.3.1",
     "gh-pages": "^6.0.0",
-    "styled-components": "^5.3.11"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "styled-components": "^5.3.11",
+    "web-vitals": "^3.1.0"
   },
   "scripts": {
     "start": "yarn -f .env.development react-scripts start",
@@ -47,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }
