@@ -1,18 +1,20 @@
 import React from "react";
 import "./HistoryItem.css";
-import ViewHeadlineIcon from '@mui/icons-material/ViewHeadline';
-
+import ViewHeadlineIcon from "@mui/icons-material/ViewHeadline";
 
 class HistoryItem extends React.Component {
-    
   render() {
-    return <div className="HistoryItem">
-        
+    return (
+      <div className="HistoryItem">
         <ViewHeadlineIcon />
         {this.props.name}
-
-        </div>;
+      </div>
+    );
   }
 }
+
+HistoryItem.defaultProps = {
+  name: "default props name",
+};
 
 export default HistoryItem;

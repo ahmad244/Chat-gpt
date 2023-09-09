@@ -16,7 +16,7 @@ class SideBar extends React.Component {
         </Button>
 
         <HistorySection>
-          <HistoryItem name="texting solutions" />
+          <HistoryItem />
           <HistoryItem name="texting solutions" />
           <HistoryItem name="texting solutions" />
           <HistoryItem name="texting solutions" />
